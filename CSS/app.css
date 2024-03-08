@@ -4,10 +4,8 @@
   font-style: normal;
 }
 
-
-
 :root {
-font-family: 'Anta',sans-serif;
+  font-family: "Anta", sans-serif;
   font-size: 16px;
   --text-primary: #f8f7fb;
   --text-secondary: #edac4e;
@@ -56,14 +54,15 @@ font-family: 'Anta',sans-serif;
   transition: var(--transition-speed);
 }
 
-.navbar-link:hover {
+.navbar-link:hover,
+.navbar-item:hover path {
   filter: grayscale(0%) opacity(1);
   background: var(--background-secondary);
   color: var(--text-secondary);
 }
 
-.navbar-link:active > path {
-  color: #edac4e;
+.navbar-link.active path {
+  color: var(--text-secondary) !important; /* Example highlight color */
 }
 
 .navbar-link svg {
@@ -98,6 +97,11 @@ main {
   margin-left: 5rem;
   padding: 1rem;
 }
+main > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 ::-webkit-scrollbar {
   width: 0.25rem;
@@ -106,15 +110,41 @@ main {
   background: #8286b0;
 }
 ::-webkit-scrollbar-thumb {
-  background: #171214;
+  background: #271f22;
+}
+code,
+pre,
+.code,
+.code-comment {
+  font-family: "Courier New", Courier, monospace;
+  background: var(--background-primary);
 }
 
-#page-content {
+pre {
+  border: 0.2rem solid var(--text-primary);
+  padding: 0.7rem;
+  margin: 0.7rem;
+  border-radius: 0.25rem;
+  overflow: auto;
+}
+
+#page-content,
+#project-page-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 3rem;
+}
+
+#language-page-content .language,
+#text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: justify;
 }
 
 h1 {
@@ -124,6 +154,38 @@ h2 {
   font-size: 2.7rem;
 }
 
+h3 {
+  font-size: 2rem;
+  margin: 0.25rem;
+  width: 75%;
+  text-wrap: none;
+}
 #page-image {
   width: 20rem;
+  border-radius: 0.75rem;
+}
+#project-page-image {
+  width: 70rem;
+  text-align: center;
+}
+
+.language path {
+  fill: var(--text-secondary);
+}
+
+.progress-stars {
+  color: var(--text-secondary);
+}
+
+#github-link:hover {
+  color: var(--background-primary);
+}
+#github-link {
+  color: var(--text-secondary);
+}
+.code {
+  color: #129d25;
+}
+.code-comment {
+  color: #000;
 }
