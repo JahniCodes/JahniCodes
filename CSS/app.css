@@ -41,6 +41,11 @@
 
 .navbar-item {
   width: 100%;
+  text-align: center;
+}
+
+.navbar-item:last-child {
+  margin-top: auto;
 }
 
 .navbar-link {
@@ -217,13 +222,13 @@ h3 {
     margin-left: 0; /* Remove the left margin */
     margin-top: 60px; /* Add some space at the top to avoid overlapping with the navbar */
   }
-  h1{
+  h1 {
     font-size: 2rem;
   }
-  h2{
+  h2 {
     font-size: 1.7rem;
   }
-  h3{
+  h3 {
     font-size: 1.5rem;
   }
 }
