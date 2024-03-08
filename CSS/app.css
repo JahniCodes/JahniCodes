@@ -189,3 +189,32 @@ h3 {
 .code-comment {
   color: #000;
 }
+@media (max-width: 768px) {
+  .navbar {
+    width: 100vw; /* Full width */
+    height: auto; /* Adjust height automatically */
+    bottom: 0; /* Position at the bottom */
+    top: auto; /* Remove top positioning */
+  }
+
+  .navbar-nav {
+    flex-direction: row; /* Align items in a row instead of a column */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .navbar-item {
+    flex-grow: 1; /* Make navbar items take up equal space */
+    display: flex;
+    justify-content: center; /* Center links inside navbar items */
+  }
+
+  .navbar-link {
+    justify-content: center; /* Center content of the link */
+    height: 60px; /* Adjust height of the link */
+  }
+
+  main {
+    margin-left: 0; /* Remove the left margin */
+    margin-top: 60px; /* Add some space at the top to avoid overlapping with the navbar */
+  }
+}
