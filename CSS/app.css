@@ -213,14 +213,18 @@ h3 {
 
   .navbar-item {
     width: 3rem;
-    flex-grow: 1; /* Make navbar items take up equal space */
+    flex-grow: 1; /*Make navbar items take up equal space */
     display: flex;
     justify-content: center; /* Center links inside navbar items */
+    margin: 0 0.25rem;
   }
-
+  .link-text {
+    display: none;
+  }
   .navbar-link {
     justify-content: center; /* Center content of the link */
     height: 60px; /* Adjust height of the link */
+    /* width: 60px; */
   }
 
   main {

@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get the current page URL
   var currentPage = window.location.pathname.split("/").pop();
-  console.log(currentPage);
   if (currentPage === "") {
     currentPage = "index.html";
   }
