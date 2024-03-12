@@ -205,6 +205,7 @@ h3 {
   .navbar-nav {
     flex-direction: row; /* Align items in a row instead of a column */
     justify-content: center; /* Center items horizontally */
+    flex-grow: 1;
   }
 
   .navbar-item {
