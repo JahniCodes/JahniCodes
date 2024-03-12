@@ -21,8 +21,6 @@
 }
 
 .navbar {
-  width: 5rem;
-  height: 100vh;
   position: fixed;
   background: var(--background-primary);
   transition: width 200ms ease-in-out;
@@ -79,16 +77,6 @@
 path {
   color: var(--text-primary);
   transition: var(--transition-speed);
-}
-
-.navbar:hover {
-  width: 18rem;
-}
-
-.navbar:hover .link-text {
-  display: block;
-  background: rgba(0, 0, 0, 0);
-  color: var(--text-secondary);
 }
 
 .link-text {
@@ -193,6 +181,20 @@ h3 {
 }
 .code-comment {
   color: #000;
+}
+@media (min-width: 767px) {
+  .navbar {
+    width: 5rem;
+    height: 100vh;
+  }
+  .navbar:hover {
+    width: 18rem;
+  }
+  .navbar:hover .link-text {
+    display: block;
+    background: rgba(0, 0, 0, 0);
+    color: var(--text-secondary);
+  }
 }
 @media (max-width: 768px) {
   .navbar {
