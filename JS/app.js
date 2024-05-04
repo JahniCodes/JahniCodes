@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get the current page URL
-  var currentPage = window.location.pathname.split("/").pop();
+  let currentPage = window.location.pathname.split("/").pop();
   if (currentPage === "") {
     currentPage = "index.html";
   }
   // Query all navbar links
-  var links = document.querySelectorAll(".navbar-nav .navbar-link");
+  let links = document.querySelectorAll(".navbar-nav .navbar-link");
 
   // Iterate through each link to find the active one
   links.forEach(function (link) {

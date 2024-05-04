@@ -226,7 +226,6 @@ h3 {
   .navbar-link {
     justify-content: center; /* Center content of the link */
     height: 60px; /* Adjust height of the link */
-    /* width: 60px; */
   }
 
   main {
